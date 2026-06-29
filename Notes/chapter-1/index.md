@@ -13,7 +13,7 @@ A structured collection of my UVM and SystemVerilog learning notes.
 - [UVM Fundamentals](./uvm_fundamental.md)
 - [UVM Components](./uvm_component.md)
 - [UVM Factory](./uvm_factory.md)
-- [UVM Reporting System](./reporting_system.md)
+- [UVM Reporting System](Notes/chapter-1/reporting_system.md)
 
 ---
 
