@@ -39,6 +39,7 @@ This repository focuses on understanding both the concepts and the implementatio
 
 ---
 
+
 # 🗂 Repository Structure
 
 ```text
@@ -70,6 +71,9 @@ uvm-design-verification-mastery/
     ├── memory_verification/
     ├── apb_verification/
     └── uart_verification/
+```
+
+---
 
 # 🛣 Learning Roadmap
 
