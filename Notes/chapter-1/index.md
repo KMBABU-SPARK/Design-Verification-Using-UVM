@@ -5,15 +5,21 @@ A structured collection of my UVM and SystemVerilog learning notes.
 ---
 
 ## Table of Contents
+# 📚 Notes Index
 
-### SystemVerilog Foundations
-- [SystemVerilog Prerequisites](./sv_prerequisites.md)
+## Chapter 1
 
-### UVM Fundamentals
-- [UVM Fundamentals](./uvm_fundamental.md)
-- [UVM Components](./uvm_component.md)
-- [UVM Factory](./uvm_factory.md)
-- [UVM Reporting System](Notes/chapter-1/reporting_system.md)
+- [SystemVerilog Prerequisites](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-1/sv_prerequisites.md)
+
+- [UVM Fundamentals](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-1/uvm_fundamental.md)
+  
+- [UVM Reporting System](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-1/reporting_system.md)
+
+- [UVM Components](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-1/uvm_component.md)
+
+- [UVM Factory](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-1/uvm_factory.md)
+
+
 
 ---
 
