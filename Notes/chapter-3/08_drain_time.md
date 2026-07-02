@@ -116,8 +116,8 @@ which, in this example, just print a "Started" message with no further delay/obj
 RESET PHASE                         MAIN PHASE                                  POST-MAIN
 t: 0      100   150                 150        250        350    350+100=450    450
    │       │     │                   │          │          │      │             │
-drv├raise──┼drop─┤                   ├─raise─────┼──drop────┤      │             │
-mon├raise──┼─────┼──drop─────────────┤           ├──raise───┼─────drop          │
+drv├raise──┼drop─┤                   ├─raise────┼──drop────┤      │             │
+mon├raise──┼─────┼──drop─────────────┤          ├──raise───┼─────drop           │
                   ▲                                          ▲      ▲            ▲
         reset ends (waits for mon)          objections=0 at 350   drain +100   post_main
                                                                   ends 450      starts
