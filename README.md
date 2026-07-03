@@ -99,6 +99,15 @@ Verification Projects
 
 ---
 
+## 📚 Learning Notes
+
+- 📘 [Chapter 1 – UVM Foundations](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/tree/main/Notes/chapter-1)
+- 📘 [Chapter 2 – UVM Object & Factory](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/tree/main/Notes/chapter-2)
+- 📘 [Chapter 3 – UVM Phases](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/tree/main/Notes/chapter-3)
+- 📘 [Chapter 4 – TLM Communication](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/tree/main/Notes/chapter-4)
+
+> 🚀 This repository is actively maintained, and new chapters are added regularly as I progress through my UVM learning journey.
+
 # 📖 Course Modules
 
 | Module | Topic | Status |
