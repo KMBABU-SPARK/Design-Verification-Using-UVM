@@ -21,6 +21,7 @@ A structured collection of my UVM and SystemVerilog learning notes.
 - [Factory Create and Override](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-2/05_factory_create_override.md)
 
 - [do_print and do_copy Methods](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-2/06_do_print_do_copy.md)
+- [uvm_component](https://github.com/KMBABU-SPARK/Design-Verification-Using-UVM/blob/main/Notes/chapter-2/06_07_uvm_component.md)
 
 ---
 
