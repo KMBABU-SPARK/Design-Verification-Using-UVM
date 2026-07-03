@@ -1,4 +1,4 @@
-# Chapter 11 — TLM Transport Port (`uvm_blocking_transport_port`/`imp`)
+# Chapter 04 — TLM Transport Port (`uvm_blocking_transport_port`/`imp`)
 
 > **Source alignment:** covers the source's "Transport port" section
 > verbatim.
