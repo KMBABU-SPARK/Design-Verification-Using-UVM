@@ -1,4 +1,4 @@
-# Chapter 13 — Debugging Topology: `uvm_top.print_topology()`
+# Chapter 06 — Debugging Topology: `uvm_top.print_topology()`
 
 > **Source alignment:** covers `uvm_top.print_topology()`, which appears in
 > Examples 3 and 4 inside `end_of_elaboration_phase` without explanation.
