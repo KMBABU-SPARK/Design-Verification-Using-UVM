@@ -1,4 +1,4 @@
-# Chapter 8 — TLM Introduction: What & Why
+# Chapter 1 — TLM Introduction: What & Why
 
 > **Source alignment:** this chapter reorganizes and expands the source
 > document's opening paragraph and its "TLM Object / Purpose" table into a
