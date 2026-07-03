@@ -1,4 +1,4 @@
-# Chapter 12 — TLM Analysis Port (`uvm_analysis_port`/`uvm_analysis_imp`)
+# Chapter 05 — TLM Analysis Port (`uvm_analysis_port`/`uvm_analysis_imp`)
 
 > **Source alignment:** covers the source's "ANALYSIS PORT" section and its
 > worked example, plus Assignment 2 (three-subscriber broadcast).
