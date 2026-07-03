@@ -1,4 +1,4 @@
-# Chapter 9 — TLM Put Port (`uvm_blocking_put_port`/`export`/`imp`)
+# Chapter 2 — TLM Put Port (`uvm_blocking_put_port`/`export`/`imp`)
 
 > **Source alignment:** covers the source's "Using put port" section and its
 > four worked examples (port→export→imp, port→imp direct, hierarchical
