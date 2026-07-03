@@ -1,4 +1,4 @@
-# Chapter 10 — TLM Get Port (`uvm_blocking_get_port`/`imp`)
+# Chapter 03 — TLM Get Port (`uvm_blocking_get_port`/`imp`)
 
 > **Source alignment:** covers the source's "use of get port" section
 > verbatim, with the direction-reversal explanation expanded.
