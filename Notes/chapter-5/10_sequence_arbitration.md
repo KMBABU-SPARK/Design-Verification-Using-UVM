@@ -59,8 +59,8 @@ other sequence gets any.
 ```
                  Sequencer arbitration queue
         ┌───────────────────────────────────────┐
-        │  request(s1, priority=100)               │
-        │  request(s2, priority=100)               │
+        │  request(s1, priority=100)            │
+        │  request(s2, priority=100)            │
         └───────────────────────────────────────┘
                           │
              mode = SEQ_ARB_STRICT_FIFO
@@ -92,7 +92,7 @@ endtask
 
 ## Line-by-Line Code Explanation
 - The commented-out `set_arbitration(...)` lines show the four alternative modes a student is meant to try one at a time, observing different DUT-stimulus interleaving each time — an intentional hands-on experiment in the source material.
-- `s2.start(e.a.seq, null, 100)` — the third argument, `100`, is the **priority** used by weighted/strict modes (fully explained in Chapter 13); `null` means "no parent sequence" (this is a top-level sequence, not a sub-sequence).
+- `s2.start(e.a.seq, null, 100)` — the third argument, `100`, is the **priority** used by weighted/strict modes ; `null` means "no parent sequence" (this is a top-level sequence, not a sub-sequence).
 - `repeat(5)` wraps each `.start()` call, so each sequence is *restarted* 5 times, each restart competing independently in arbitration.
 
 ## Common Errors and Debugging Tips
