@@ -1,9 +1,6 @@
-# Chapter 11 — Running Multiple Sequences in Parallel
+# Chapter 09 — Running Multiple Sequences in Parallel
 
-## Chapter Overview
-"Topic-4" ("multiple sequence in parallel") introduces a second sequence
-class and starts both on the *same* sequencer concurrently using `fork/join`.
-This is the gateway topic into arbitration (Chapter 12).
+
 
 ## Learning Objectives
 - Start two independent sequences on the same sequencer at the same time.
@@ -43,11 +40,11 @@ sequences first, arbitration modes would have nothing to arbitrate between.
         test::run_phase
               │
      ┌────────┴─────────┐
-     │       fork          │
-     ▼                    ▼
+     │       fork       │
+     ▼                  ▼
  s1.start(seq)        s2.start(seq)      <- both run concurrently
-     │                    │
-     └─────────┬──────────┘
+     │                  │
+     └─────────┬────────┘
                ▼
          uvm_sequencer            <- must arbitrate: whose item goes next?
                │
