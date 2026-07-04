@@ -1,4 +1,4 @@
-# Chapter 14 — Holding the Sequencer: `lock()`/`unlock()` and `grab()`/`ungrab()`
+# Chapter 12 — Holding the Sequencer: `lock()`/`unlock()` and `grab()`/`ungrab()`
 
 ## Chapter Overview
 The final topic in the source notes: what if priority/arbitration isn't
@@ -92,10 +92,10 @@ Seq2-Tx3
 ```
               lock()                              grab()
    ┌─────────────────────────┐      ┌─────────────────────────────┐
-   │ join arbitration queue     │      │ SKIP arbitration queue          │
-   │ wait for normal turn       │      │ seize sequencer IMMEDIATELY     │
-   │ once granted: hold until    │      │ other sequences blocked         │
-   │ unlock()                   │      │ instantly, mid-sequence          │
+   │ join arbitration queue  │      │ SKIP arbitration queue      │
+   │ wait for normal turn    │      │ seize sequencer IMMEDIATELY │
+   │ once granted: hold until│      │ other sequences blocked     │
+   │ unlock()                │      │ instantly, mid-sequence     │
    └─────────────────────────┘      └─────────────────────────────┘
         cooperative                          aggressive / preemptive
 ```
