@@ -1,4 +1,4 @@
-# Chapter 3 — `uvm_sequence_item` & the Transaction Class
+# Chapter 1 — `uvm_sequence_item` & the Transaction Class
 
 ## Chapter Overview
 The `transaction` class is the single most-reused piece of code across all
