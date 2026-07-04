@@ -1,9 +1,6 @@
 # Chapter 7 — High-Level Sequence API: `start_item()` / `finish_item()`
 
-## Chapter Overview
-"Topic-3" in the source notes ("sending data to driver method@2") replaces
-the four manual calls from Chapter 8 with the two-call idiomatic pattern
-used in essentially all real-world UVM code.
+
 
 ## Learning Objectives
 - Explain what `start_item()` and `finish_item()` each do internally.
