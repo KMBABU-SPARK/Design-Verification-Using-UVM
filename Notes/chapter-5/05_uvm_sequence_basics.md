@@ -62,15 +62,15 @@ endtask
         │ seq1.start(sequencer)
         ▼
  ┌─────────────────┐
- │   pre_body()      │  "PRE-BODY EXECUTED"
- └────────┬─────────┘
+ │   pre_body()    │  "PRE-BODY EXECUTED"
+ └────────┬────────┘
           ▼
  ┌─────────────────┐
- │     body()        │  "BODY EXECUTED"   <-- your scenario logic lives here
- └────────┬─────────┘
+ │     body()      │  "BODY EXECUTED"   <-- your scenario logic lives here
+ └────────┬────────┘
           ▼
  ┌─────────────────┐
- │   post_body()     │  "POST-BODY EXECUTED"
+ │   post_body()   │  "POST-BODY EXECUTED"
  └─────────────────┘
 ```
 
@@ -102,7 +102,7 @@ endclass
 2. `` `uvm_object_utils(sequence1) `` — factory registration (Chapter 2); note **no field macros needed** here since a sequence has no data fields worth printing/copying.
 3. Constructor — standard `uvm_object` pattern (name only, no parent).
 4–6. `pre_body()` — logs a message; in this minimal example does nothing functionally important.
-7–9. `body()` — logs a message; **in a real sequence this is where transactions get created and sent** (Chapters 8–9).
+7–9. `body()` — logs a message; **in a real sequence this is where transactions get created and sent** .
 10–12. `post_body()` — logs a message; mirror of `pre_body()`.
 
 ## Common Errors and Debugging Tips
