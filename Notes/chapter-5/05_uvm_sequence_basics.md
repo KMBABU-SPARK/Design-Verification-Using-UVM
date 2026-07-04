@@ -1,4 +1,4 @@
-# Chapter 7 — `uvm_sequence` Basics: `body()`, `pre_body()`, `post_body()`
+# Chapter 5 — `uvm_sequence` Basics: `body()`, `pre_body()`, `post_body()`
 
 ## Chapter Overview
 This chapter isolates the very first sequence example in the notes
