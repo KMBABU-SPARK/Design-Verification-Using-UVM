@@ -1,4 +1,4 @@
-# Chapter 9 — High-Level Sequence API: `start_item()` / `finish_item()`
+# Chapter 7 — High-Level Sequence API: `start_item()` / `finish_item()`
 
 ## Chapter Overview
 "Topic-3" in the source notes ("sending data to driver method@2") replaces
@@ -51,19 +51,19 @@ identical, final randomized values.
 ```
    for 5 iterations:
    ┌────────────────────────────────────────────────────┐
-   │ create new transaction                                │
-   │        │                                              │
-   │        ▼                                              │
-   │  start_item(trans) ───► (internally: wait_for_grant)   │
-   │        │                                              │
-   │        ▼                                              │
-   │  randomize(trans)                                     │
-   │        │                                              │
-   │        ▼                                              │
-   │  finish_item(trans) ──► (internally: send_request      │
-   │        │                 + wait_for_item_done)          │
-   │        ▼                                              │
-   │  print a, b via `uvm_info                              │
+   │ create new transaction                             │
+   │        │                                           │
+   │        ▼                                           │
+   │  start_item(trans) ───► (internally: wait_for_grant)   
+   │        │                                           │
+   │        ▼                                           │
+   │  randomize(trans)                                  │
+   │        │                                           │
+   │        ▼                                           │
+   │  finish_item(trans) ──► (internally: send_request  │
+   │        │                 + wait_for_item_done)     │
+   │        ▼                                           │
+   │  print a, b via `uvm_info                          │
    └────────────────────────────────────────────────────┘
 ```
 
@@ -114,7 +114,7 @@ endclass
 - `assert(trans.randomize);` — note: **missing parentheses** (`randomize` instead of `randomize()`) — SystemVerilog allows calling a method with no arguments without parentheses, so this compiles and runs identically to `randomize()`. Still, `randomize()` with explicit parentheses is the clearer, more conventional style.
 - `finish_item(trans);` — sends the item and blocks until the driver reports it done.
 - `$sformatf("a : %0d b:%0d", trans.a, trans.b)` — formats a string for the log message; `%0d` prints a decimal integer with no leading padding.
-- Driver side: unchanged three-step handshake from Chapter 4, now also logging the received values for visual confirmation that data actually transferred correctly.
+- Driver side: unchanged three-step handshake, now also logging the received values for visual confirmation that data actually transferred correctly.
 
 ## Common Errors and Debugging Tips
 - **Calling `finish_item()` without a matching `start_item()`** → runtime error; the API requires the pair to be called on the same item, in order.
