@@ -1,9 +1,4 @@
-# Chapter 12 — Sequence Arbitration
-
-## Chapter Overview
-Direct continuation of Chapter 11: now that two sequences compete for one
-sequencer, this chapter covers the six arbitration modes UVM provides to
-control who wins that competition, straight from the source notes.
+# Chapter 10 — Sequence Arbitration
 
 ## Learning Objectives
 - Name all six `UVM_SEQ_ARB_*` modes and describe each one's selection rule.
