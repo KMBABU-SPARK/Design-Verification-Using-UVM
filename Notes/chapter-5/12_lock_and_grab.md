@@ -147,7 +147,7 @@ endclass
 
 ## Line-by-Line Code Explanation
 - `lock(m_sequencer);` / `grab(m_sequencer);` — must be called on the sequencer handle the sequence is actually running on; `m_sequencer` is UVM's built-in reference to exactly that, set automatically when `.start()` runs.
-- The `repeat(3)` body is identical to the high-level API pattern from Chapter 9 — the *only* difference introduced in this chapter is the surrounding `lock`/`unlock` or `grab`/`ungrab` pair.
+- The `repeat(3)` body is identical to the high-level API pattern  — the *only* difference introduced in this chapter is the surrounding `lock`/`unlock` or `grab`/`ungrab` pair.
 - `unlock(m_sequencer);` / `ungrab(m_sequencer);` — **mandatory** release; without it the sequencer remains held for the rest of the simulation and every other sequence starves.
 
 ## Common Errors and Debugging Tips
