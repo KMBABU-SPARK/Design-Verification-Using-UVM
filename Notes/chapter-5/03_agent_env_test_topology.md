@@ -1,4 +1,4 @@
-# Chapter 5 — Agent, Env, and Test: Assembling the Component Tree
+# Chapter 3 — Agent, Env, and Test: Assembling the Component Tree
 
 ## Chapter Overview
 The driver from Chapter 4 needs a sequencer to talk to, and that pairing
