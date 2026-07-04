@@ -1,4 +1,4 @@
-# Chapter 8 — Low-Level Sequence API: `wait_for_grant` / `send_request` / `wait_for_item_done`
+# Chapter 6 — Low-Level Sequence API: `wait_for_grant` / `send_request` / `wait_for_item_done`
 
 ## Chapter Overview
 "Topic-2" in the source notes ("understand the exact flow followed by
@@ -53,14 +53,14 @@ used on the other side.**
 ## Architecture Diagram
 ```
    sequence1::body()                              driver::run_phase()
- ┌─────────────────────────┐                    ┌──────────────────────┐
- │ create(trans)             │                    │                       │
- │ wait_for_grant()  ────────┼──── request ──────►│                       │
- │  (blocks until granted)   │                    │  get_next_item(t) ◄───┼─ (unblocks after
- │ randomize(trans)          │                    │                       │   send_request)
- │ send_request(trans) ──────┼──── item ─────────►│  // drive DUT          │
- │ wait_for_item_done() ◄────┼──── item_done ─────│  item_done()          │
- └─────────────────────────┘                    └──────────────────────┘
+ ┌─────────────────────────┐                      ┌──────────────────────┐
+    create(trans)                                                       
+   wait_for_grant()  ──────────── request ──────►                     
+   (blocks until granted)                           get_next_item(t) ◄──── (unblocks after
+   randomize(trans)                                                        send_request)
+   send_request(trans) ────────── item ─────────►   // drive DUT          
+   wait_for_item_done() ◄──────── item_done ─────   item_done()          
+ └─────────────────────────┘                      └──────────────────────┘
 ```
 
 ## Code Example from the Notes (Topic-2)
@@ -90,9 +90,9 @@ endclass
 ```
 
 ## Line-by-Line Code Explanation
-- `trans = transaction::type_id::create("trans");` — factory-created item (Chapter 2/3).
+- `trans = transaction::type_id::create("trans");` — factory-created item .
 - `wait_for_grant();` — blocking call; only returns once the sequencer's arbitration selects this sequence.
-- `assert(trans.randomize());` — standard defensive randomization pattern (Chapter 0).
+- `assert(trans.randomize());` — standard defensive randomization pattern .
 - `send_request(trans);` — hands the (already-randomized) item to the sequencer's item queue.
 - `wait_for_item_done();` — blocks until the driver's `item_done()` call unblocks it.
 - Each `` `uvm_info `` call is purely instructional here — it exists so a beginner can watch the exact order these five steps execute in the simulation log.
