@@ -1,4 +1,4 @@
-# Chapter 10 — Objections & `run_test()`
+# Chapter 08 — Objections & `run_test()`
 
 ## Chapter Overview
 Every `test::run_phase` in the source notes brackets its work with
@@ -78,10 +78,10 @@ does that for the entire tree automatically.
         ▼
   run_phase (all components' run_phase tasks run concurrently)
    ┌───────────────────────────────────────────┐
-   │ test::run_phase:                             │
-   │   raise_objection ──┐                        │
-   │   seq1.start(...)    │  phase stays "alive"    │
-   │   drop_objection ───┘  while objection is up  │
+   │ test::run_phase:                          │
+   │   raise_objection ──┐                     │
+   │   seq1.start(...)    hase stays "alive"   │
+   │   drop_objection ───┘while objection is up│
    └───────────────────────────────────────────┘
         │  (once ALL objections across ALL run_phase tasks are dropped)
         ▼
