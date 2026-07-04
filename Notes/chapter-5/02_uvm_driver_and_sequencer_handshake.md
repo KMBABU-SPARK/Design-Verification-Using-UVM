@@ -1,4 +1,4 @@
-# Chapter 4 — `uvm_driver` and the Sequencer↔Driver Handshake
+# Chapter 2 — `uvm_driver` and the Sequencer↔Driver Handshake
 
 ## Chapter Overview
 This is "Topic-1" from the source notes, isolated to its core idea: how does
