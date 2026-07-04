@@ -164,6 +164,3 @@ endclass
 
 ---
 
-**This concludes the core learning path.** Proceed to
-`../projects/project1_ram_sequence_project.md` to apply everything from
-Chapters 0–14 in one consolidated exercise.
