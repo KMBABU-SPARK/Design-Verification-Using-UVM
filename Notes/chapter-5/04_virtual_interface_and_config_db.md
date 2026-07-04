@@ -1,4 +1,4 @@
-# Chapter 6 — Virtual Interface & `uvm_config_db`
+# Chapter 4 — Virtual Interface & `uvm_config_db`
 
 ## Chapter Overview
 "Topic-2" in the source notes introduces `virtual adder_if aif;` and
