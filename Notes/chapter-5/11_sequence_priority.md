@@ -1,9 +1,6 @@
-# Chapter 13 — Sequence Priority
+# Chapter 11 — Sequence Priority
 
-## Chapter Overview
-Chapter 12 mentioned the `priority` argument to `.start()` without fully
-explaining it. This short chapter isolates that concept using the notes'
-dedicated "priority method" example.
+
 
 ## Learning Objectives
 - Explain what the `priority` argument to `seq.start()` controls.
@@ -36,8 +33,8 @@ function void start(uvm_sequencer_base sequencer,
 ```
        arbitration mode = SEQ_ARB_STRICT_FIFO
    ┌───────────────────────────────────────────┐
-   │ s1.start(seq, null, 100)   priority = 100     │
-   │ s2.start(seq, null, 200)   priority = 200     │
+   │ s1.start(seq, null, 100)   priority = 100 │
+   │ s2.start(seq, null, 200)   priority = 200 │
    └───────────────────────────────────────────┘
                        │
                        ▼
@@ -67,7 +64,7 @@ transactions are serviced before s1's.
 - `s2.start(e.a.seq, null, 200);` — priority 200, strictly higher, so under `STRICT_FIFO` it wins every grant decision while it still has pending items.
 
 ## Common Errors and Debugging Tips
-- **Using `SEQ_ARB_FIFO` or `SEQ_ARB_RANDOM` and expecting priority to matter** → these two modes ignore priority entirely (Chapter 12); switch to `WEIGHTED`/`STRICT_FIFO`/`STRICT_RANDOM`.
+- **Using `SEQ_ARB_FIFO` or `SEQ_ARB_RANDOM` and expecting priority to matter** → these two modes ignore priority entirely ; switch to `WEIGHTED`/`STRICT_FIFO`/`STRICT_RANDOM`.
 - **Assigning the same priority to two sequences and expecting a deterministic winner under `STRICT_FIFO`** → ties are broken by arrival order (FIFO), not by any other implicit rule.
 - **Confusing "priority" with "arbitration mode"** → priority is a per-sequence numeric value; arbitration mode is the sequencer-wide algorithm that decides *how* to use that value (or ignore it).
 
