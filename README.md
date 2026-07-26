@@ -136,22 +136,8 @@ After completing this repository, you will be able to:
 
 ---
 
-## 🤝 Contributions
+## 🤝 THANKYOU FOR VISITING.
 
-Contributions, suggestions, and improvements are always welcome.
 
-If you find any issues or have ideas for improving the repository, feel free to open an issue or submit a pull request.
 
----
 
-## ⭐ Support
-
-If you find this repository helpful, consider giving it a ⭐ on GitHub.
-
-It helps others discover the repository and motivates further development.
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**.
