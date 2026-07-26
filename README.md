@@ -108,20 +108,24 @@ Verification Projects
 
 ## 🧪 Verification Projects
 
-### 🟢 Beginner Projects
+### 🟢 SystemVerilog Verification Projects
+
+- D Flip-Flop (D_FF)
+- FIFO
+- I²C
+- SPI
+
+### 🔵 UVM Beginner Projects
 
 - 4-bit Adder Verification
 - 4×1 Multiplexer Verification
 - D Flip-Flop Verification
 - Multiplier Verification
 
-### 🟡 Intermediate Projects
+### 🟡 UVM Intermediate Projects
 
 - Baud Clock Divider Verification
 - UART Design & Verification
-
----
-
 ## 🎯 Learning Objectives
 
 After completing this repository, you will be able to:
