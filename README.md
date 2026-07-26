@@ -43,34 +43,77 @@ This repository focuses on understanding both the concepts and the implementatio
 # 🗂 Repository Structure
 
 ```text
-uvm-design-verification-mastery/
+Design-Verification-Using-UVM/
 │
 ├── README.md
 │
-├── notes/
-│   ├── 01_UVM_Fundamentals/
-│   ├── 02_UVM_Reporting/
-│   ├── 03_UVM_Object_vs_Component/
-│   ├── 04_UVM_Phases/
-│   ├── 05_UVM_TLM/
-│   ├── 06_UVM_Sequences/
-│   ├── 07_UVM_Debugging/
-│   └── 08_Build_UVM_Environment/
+├── Notes/
+│   │
+│   ├── chapter-1/
+│   │   ├── index.md
+│   │   ├── uvm_fundamental.md
+│   │   ├── sv_prerequisites.md
+│   │   ├── reporting_system.md
+│   │   ├── uvm_component.md
+│   │   └── uvm_factory.md
+│   │
+│   ├── chapter-2/
+│   │   ├── source_codes/
+│   │   ├── 00_sv_oop_prerequisites.md
+│   │   ├── 01_uvm_object_and_factory_intro.md
+│   │   ├── 02_field_macros.md
+│   │   ├── 03_copy_clone_and_types.md
+│   │   ├── 04_compare_method.md
+│   │   ├── 05_factory_create_override.md
+│   │   ├── 06_do_print_do_copy.md
+│   │   └── 07_uvm_components.md
+│   │
+│   ├── chapter-3/
+│   │   ├── index.md
+│   │   ├── 00_svprerequisites_oops.md
+│   │   ├── 01_uvm_testbench_architecture.md
+│   │   ├── 02_uvm_phases_overview.md
+│   │   ├── 03_construction_and_cleanup_phase.md
+│   │   ├── 04_env_build_phase.md
+│   │   ├── 05_objections_raise_drop.md
+│   │   ├── 06_run_time_phase.md
+│   │   └── 07_simulation_timeout.md
+│   │
+│   ├── chapter-4/
+│   │   ├── 00_prerequisites_systemverilog_oop.md
+│   │   ├── 01_tlm_introduction.md
+│   │   ├── 02_tlm_put_port.md
+│   │   ├── 03_tlm_get_port.md
+│   │   ├── 04_tlm_transport_port.md
+│   │   ├── 05_tlm_analysis_port.md
+│   │   └── 06_topology_debug.md
+│   │
+│   └── chapter-5/
+│       ├── 01_sequence_item_and_transactions.md
+│       ├── 02_uvm_driver_and_sequencer_handshake.md
+│       ├── 03_agent_env_test_topology.md
+│       ├── 04_virtual_interface_and_config_db.md
+│       ├── 05_uvm_sequence_basics.md
+│       ├── 06_low_level_sequence_api.md
+│       ├── 07_high_level_sequence_api.md
+│       ├── 08_objections_and_run_test.md
+│       ├── 09_parallel_sequences.md
+│       ├── 10_sequence_arbitration.md
+│       ├── 11_sequence_priority.md
+│       └── 12_lock_and_grab.md
 │
-│
-├── cheatsheets/
-│   ├── uvm_factory.md
-│   ├── uvm_phases.md
-│   ├── uvm_tlm.md
-│   ├── config_db.md
-│   └── debugging_guide.md
-│
-└── projects/
-    ├── adder_verification/
-    ├── fifo_verification/
-    ├── memory_verification/
-    ├── apb_verification/
-    └── uart_verification/
+├── Projects/
+    │
+    ├── beginner/
+    │   ├── adder.md
+    │   ├── dflipflop.md
+    │   ├── multiplier.md
+    │   └── mux4x1.md
+    │
+    ├── intermediate/
+        ├── baud_clk_divider.md
+        └── uart_design.md
+  
 ```
 
 ---
@@ -78,23 +121,31 @@ uvm-design-verification-mastery/
 # 🛣 Learning Roadmap
 
 ```text
+README
+   │
+   ▼
+Chapter 1
 UVM Fundamentals
-        ↓
-Reporting Macros & Associated Actions
-        ↓
-UVM Object vs UVM Component
-        ↓
-UVM Phases
-        ↓
+   │
+   ▼
+Chapter 2
+UVM Objects • Factory • Components
+   │
+   ▼
+Chapter 3
+UVM Testbench Architecture & Phases
+   │
+   ▼
+Chapter 4
 TLM Communication
-        ↓
-Sequences
-        ↓
-UVM Debugging Features
-        ↓
-Building UVM Verification Environment from Scratch
-        ↓
-Verification Projects
+   │
+   ▼
+Chapter 5
+Sequences & Sequencer
+   │
+   ▼
+Projects
+(Beginner → Intermediate )
 ```
 
 ---
@@ -111,17 +162,15 @@ Verification Projects
 
 # 📖 Course Modules
 
-| Module | Topic | Status |
-|----------|--------|--------|
-| 01 | Fundamentals of Universal Verification Methodology | ✅ |
-| 02 | Reporting Macros and Associated Actions | ✅ |
-| 03 | UVM Object and UVM Component | ✅ |
-| 04 | UVM Phases | ✅ |
-| 05 | TLM Communication | ✅ |
-| 06 | Sequences | ✅ |
-| 07 | UVM Debugging Features | ✅ |
-| 08 | Building UVM Verification Environment from Scratch | ✅ |
-| 09 | Verification Projects | ✅ |
+| Module | Topic                               | Status |
+| :----: | ----------------------------------- | :----: |
+| **01** | UVM Foundations                     |    ✅   |
+| **02** | UVM Objects & Factory               |    ✅   |
+| **03** | UVM Testbench Architecture & Phases |    ✅   |
+| **04** | Transaction Level Modeling (TLM)    |    ✅   |
+| **05** | Sequences & Sequencer Communication |    ✅   |
+| **06** | Basic Verification Projects         |    ✅   |
+
 
 ---
 
